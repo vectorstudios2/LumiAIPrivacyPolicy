@@ -1,0 +1,276 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lumi AI — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for Lumi AI by Vector Studios India" />
+  <style>
+    :root {
+        /* Backgrounds */
+        --bg-color: #0a1020; /* darker */
+        --glass-bg: rgba(20, 30, 50, 0.5); /* darker */
+        --overlay-bg: rgba(10, 15, 30, 0.92); /* darker *//* Text */
+    --text-primary: #ffffff; /* slightly more saturated */
+    --text-secondary: #a0b4d0; /* more saturated */
+
+    /* Accent Colors */
+    --accent: #7628ff; /* darker & more saturated */
+    --accent-light: #9a4fff; /* more saturated */
+
+    /* Status Colors */
+    --success: #0ea96d; /* darker & more saturated */
+    --warning: #f78c00; /* more saturated */
+    --danger: #e63636; /* darker & more saturated */
+    
+    /* UI Elements */
+    --border: 1px solid rgba(255, 255, 255, 0.15); /* slightly stronger */
+    --border-radius: 16px;
+    --blur: 12px;
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.35); /* deeper shadow */
+    
+    /* Chat Specific */
+    --chat-session-bg: rgba(20, 30, 50, 0.5); /* darker */
+    --chat-session-hover: rgba(20, 30, 50, 0.75); /* darker */
+    --ai-message-bg: rgba(20, 30, 50, 0.5); /* darker */
+    --scroll-btn-bg: rgba(20, 30, 50, 0.5); /* darker */
+    --scroll-btn-hover: rgba(20, 30, 50, 0.75); /* darker */
+    --panel-bg: rgba(20, 30, 50, 0.5); /* darker */
+    --context-menu-hover: rgba(140, 40, 210, 0.25); /* more saturated */
+    
+    /* Input */
+    --input-text: #ffffff; /* more saturated white */
+
+    /* Buttons */
+    --button-text: #ffffff;
+    --icon-color: #a0b4d0; /* more saturated */
+
+    /* Pulse Effect */
+    --pulse-color: #9a4fff; /* more saturated */
+
+    /* Tag Gradients */
+    --tag-gradient-1: linear-gradient(135deg, #ff5a93, #ff9cc9); /* more saturated */
+    --tag-gradient-2: linear-gradient(135deg, #4a91ff, #00e8ff); /* more saturated */
+    --tag-gradient-3: linear-gradient(135deg, #ffcf5a, #ffa533); /* more saturated */
+    --tag-gradient-4: linear-gradient(135deg, #1fd7a4, #19c292); /* more saturated */
+    --tag-gradient-5: linear-gradient(135deg, #2c4a88, #5aa6ff); /* more saturated */
+    --tag-gradient-6: linear-gradient(135deg, #ff3248, #ff7a94); /* more saturated */
+}
+
+body {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    margin: 0;
+    color: var(--text-primary);
+    background-color: var(--bg-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    background-image: 
+        radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.12) 0, transparent 50%),
+        radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.12) 0, transparent 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 28px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: var(--border);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(var(--blur));
+    box-shadow: var(--shadow);
+    padding: 20px;
+    height: fit-content;
+}
+
+.brand {
+    display:flex;align-items:center;gap:12px;margin-bottom:18px
+}
+
+.logo {
+    width:48px;height:48px;border-radius:12px;
+    background: conic-gradient(from 120deg, var(--accent), var(--accent-light));
+    box-shadow: 0 6px 18px rgba(118,40,255,0.18);
+    display:flex;align-items:center;justify-content:center;font-weight:700;
+    color:white;font-size:18px
+}
+
+.app-name {font-weight:700;font-size:16px}
+.studio {font-size:12px;color:var(--text-secondary)}
+
+.sidebar .meta {margin-top:8px;font-size:13px;color:var(--text-secondary)}
+
+.toc {margin-top:18px}
+.toc a {display:block;padding:10px;border-radius:12px;color:var(--text-secondary);text-decoration:none;margin-bottom:8px;font-size:14px}
+.toc a:hover {background:var(--chat-session-hover);color:var(--text-primary)}
+
+/* Main card */
+.card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: var(--border);
+    border-radius: calc(var(--border-radius) + 8px);
+    backdrop-filter: blur(calc(var(--blur) + 4px));
+    box-shadow: var(--shadow);
+    padding: 28px;
+    min-height: 420px;
+    overflow:auto;
+}
+
+header.card-header {display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.title {font-size:20px;font-weight:700}
+.subtitle {color:var(--text-secondary);font-size:13px}
+
+.meta-row {display:flex;gap:12px;align-items:center}
+.pill {padding:6px 10px;border-radius:999px;font-size:13px;border:var(--border);color:var(--text-secondary);background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005))}
+
+.content h2{color:var(--text-primary);margin-top:18px}
+.content p{color:var(--text-secondary);line-height:1.6}
+
+.contact {display:flex;flex-direction:column;gap:6px;margin-top:14px}
+.contact a{color:var(--accent);text-decoration:none}
+
+footer {margin-top:28px;border-top:1px dashed rgba(255,255,255,0.04);padding-top:14px;color:var(--text-secondary);font-size:13px}
+
+/* Buttons */
+.controls {display:flex;gap:12px}
+.btn {padding:10px 14px;border-radius:12px;border:0;cursor:pointer;font-weight:600}
+.btn-ghost {background:transparent;color:var(--text-secondary);border:var(--border)}
+.btn-primary {background:linear-gradient(90deg,var(--accent),var(--accent-light));color:var(--button-text)}
+
+/* responsive */
+@media (max-width: 880px){
+    .container{grid-template-columns:1fr;}
+}
+
+/* small helpers */
+.muted{color:var(--text-secondary);font-size:13px}
+.kbd{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);font-size:12px}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" aria-label="navigation">
+      <div class="brand">
+        <div class="logo">L</div>
+        <div>
+          <div class="app-name">Lumi AI</div>
+          <div class="studio">Vector Studios India</div>
+        </div>
+      </div><div class="meta">A short, Play Store–friendly privacy policy for Lumi AI. Effective date shown below.</div>
+
+  <nav class="toc" aria-label="Table of contents">
+    <a href="#info">1. Information We Collect</a>
+    <a href="#use">2. How We Use Your Information</a>
+    <a href="#storage">3. Data Storage & Sharing</a>
+    <a href="#retention">4. Data Retention</a>
+    <a href="#children">5. Children’s Privacy</a>
+    <a href="#security">6. Security</a>
+    <a href="#contact">7. Contact</a>
+  </nav>
+
+  <div style="margin-top:18px;display:flex;gap:8px;align-items:center;justify-content:space-between">
+    <div class="muted">Status: <span class="kbd">Free</span></div>
+    <div class="muted">Version: <span class="kbd">1.0</span></div>
+  </div>
+
+</aside>
+
+<main class="card" role="main">
+  <header class="card-header">
+    <div>
+      <div class="title">Privacy Policy — Lumi AI</div>
+      <div class="subtitle">Operated by Vector Studios India</div>
+    </div>
+    <div class="meta-row">
+      <div class="pill">Effective: <span id="effective-date">—</span></div>
+      <div class="controls">
+        <button class="btn btn-ghost" id="copy-btn" title="Copy policy text">Copy</button>
+        <button class="btn btn-primary" id="download-btn">Download HTML</button>
+      </div>
+    </div>
+  </header>
+
+  <article class="content" id="policy">
+    <h2 id="info">1. Information We Collect</h2>
+    <p>When you use Lumi AI, we collect the following information:</p>
+    <ul>
+      <li><strong>Conversations:</strong> The text you send and the AI’s responses.</li>
+      <li><strong>Images:</strong> Any images you send to the App.</li>
+    </ul>
+    <p>We do <strong>not</strong> collect your name, email, or other personal identifiers unless you voluntarily include them inside a conversation.</p>
+
+    <h2 id="use">2. How We Use Your Information</h2>
+    <p>We use your conversations and images to process and respond to your requests and to generate AI responses.</p>
+
+    <h2 id="storage">3. Data Storage &amp; Sharing</h2>
+    <p>Your conversation text and images are stored locally on your device initially. When you send a message or image, the data is transmitted to our own AI API (operated by Vector Studios India) for processing. We may share the conversation and images with our AI processing services in order to provide responses.</p>
+    <p>We <em>do not</em> sell your data to advertisers or unrelated third parties.</p>
+
+    <h2 id="retention">4. Data Retention</h2>
+    <p>We retain conversation text and images indefinitely. Currently, deletion requests are not supported and data cannot be removed on demand.</p>
+
+    <h2 id="children">5. Children’s Privacy</h2>
+    <p>Lumi AI is available for all age groups, including children. If you are under 18, please use the App with the consent and supervision of a parent or guardian.</p>
+
+    <h2 id="security">6. Security</h2>
+    <p>No special encryption or advanced security measures are implemented beyond standard operation of the App at this time.</p>
+
+    <h2 id="contact">7. Contact</h2>
+    <p>If you have questions about this Privacy Policy, contact us at:</p>
+    <div class="contact">
+      <a href="mailto:contact.saksham.digital.aga@gmail.com">contact.saksham.digital.aga@gmail.com</a>
+      <div class="muted">Operator: Vector Studios India</div>
+    </div>
+
+    <footer>
+      <div>All features of the App are free to use. This document is intended to be Play Store–friendly. Replace the Effective date if you want a fixed date.</div>
+    </footer>
+  </article>
+</main>
+
+  </div>  <script>
+    // Set effective date to today's date (localized)
+    const eff = new Date();
+    const opts = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('effective-date').textContent = eff.toLocaleDateString(undefined, opts);
+
+    // Copy policy text
+    const copyBtn = document.getElementById('copy-btn');
+    copyBtn.addEventListener('click', async () => {
+      const policy = document.getElementById('policy').innerText;
+      try {
+        await navigator.clipboard.writeText(policy);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(()=>copyBtn.textContent='Copy',1400);
+      } catch (e) {
+        alert('Copy not supported in this browser.');
+      }
+    });
+
+    // Download HTML
+    document.getElementById('download-btn').addEventListener('click', () => {
+      const html = `<!doctype html>` + '\n' + document.documentElement.outerHTML;
+      const blob = new Blob([html], { type: 'text/html' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'lumi-ai-privacy-policy.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script></body>
+                                                                </html>
